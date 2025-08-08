@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session6 ex2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: arial, sans-serif;
+            background-color: #27a008;
+
+        }
+        .form-container{
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 10px rgba(rgb(230, 225, 225), rgb(220, 224, 220), rgb(235, 235, 236), alpha);
+            width: 300px;
+
+        }
+        .form-container h2{
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] 
+        {
+            width: 100%;
+            padding: 8px;
+            margin-top: 15px;
+            border: 1px solid#ccc;
+            border-radius: 5px;
+
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;   
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: blue;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>ĐĂNG KÝ</h2>
+        <FORM>
+            <label for="NAME">TÊN </label>
+            <INPUT type="text" id="NAME" name="NAME" required>
+            <label for="EMAIL">EMAIL</label>
+        <input type="email" id="email" required>
+        <label for="password">MẬT KHẨU</label>
+        <input type="password" id="password" required><BR>
+        
+        <button type="submit">DĂNG NHẬP</button>
+        </FORM>
+    </div>
+    
+</body>
+</html>
