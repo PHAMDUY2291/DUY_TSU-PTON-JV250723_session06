@@ -1,0 +1,13 @@
+
+div{
+    background-color: aquamarine;
+    color: aliceblue;
+    
+}
+ul{text-align: right;}
+h1{text-align: left;}
+main{text-align: center;}
+tbody{
+    text-align: center;
+    font-size: 50px;
+}
