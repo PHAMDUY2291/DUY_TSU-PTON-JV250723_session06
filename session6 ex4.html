@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        seesion6 ex4
+    </title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Nền xám nhạt */
+        }
+        .header-bg {
+            background-color: #22c55e; /* Màu xanh lá cây cho tiêu đề */
+        }
+        .footer-bg {
+            background-color: #374151; /* Màu xám đậm cho chân trang */
+        }
+        .sidebar-bg {
+            background-color: #e5e7eb; /* Màu xám nhạt cho sidebar */
+        }
+        .card-bg {
+            background-color: #ffffff; /* Nền trắng cho các bài viết */
+        }
+        .link-text {
+            color: #1d4ed8; /* Màu xanh đậm cho link */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="header-bg py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-white text-3xl font-bold rounded-md">My Blog</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white hover:underline rounded-md">Trang chủ</a></li>
+                    <li><a href="#" class="text-white hover:underline rounded-md">Giới thiệu</a></li>
+                    <li><a href="#" class="text-white hover:underline rounded-md">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4 sidebar-bg p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 rounded-md">Chuyên mục</h2>
+            <ul class="space-y-2">
+                <li><a href="#" class="link-text hover:underline rounded-md">HTML</a></li>
+                <li><a href="#" class="link-text hover:underline rounded-md">CSS</a></li>
+                <li><a href="#" class="link-text hover:underline rounded-md">JavaScript</a></li>
+                <li><a href="#" class="link-text hover:underline rounded-md">Khác</a></li>
+            </ul>
+        </aside>
+
+        <!-- Blog Posts Section -->
+        <section class="w-full md:w-3/4">
+            <h2 class="text-3xl font-bold mb-6 rounded-md">Bài viết mới nhất</h2>
+
+            <!-- Bài viết 1 -->
+            <div class="card-bg p-6 rounded-lg shadow-md mb-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <img src="https://placehold.co/150x100/FFD700/000000?text=JS" alt="Bài viết 1" class="w-full sm:w-auto h-auto rounded-lg">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 rounded-md">Bài viết 1</h3>
+                    <p class="text-gray-700 rounded-md">Dù sao thì cũng phải cố gắng hết sức để phát triển bản thân và kỹ năng của mình!</p>
+                    <a href="#" class="link-text hover:underline mt-2 inline-block rounded-md">Đọc thêm</a>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="card-bg p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <img src="https://placehold.co/150x100/000000/FFD700?text=JS" alt="Bài viết 2" class="w-full sm:w-auto h-auto rounded-lg">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 rounded-md">Bài viết 2</h3>
+                    <p class="text-gray-700 rounded-md">Cố gắng suy nghĩ và tìm hiểu thêm về các công nghệ mới.</p>
+                    <a href="#" class="link-text hover:underline mt-2 inline-block rounded-md">Đọc thêm</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-bg py-6 mt-8 shadow-inner">
+        <div class="container mx-auto px-4 text-center text-white text-sm">
+            <p class="rounded-md">Liên hệ: email@example.com</p>
+            <p class="mt-2 rounded-md">&copy; 2025 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html
