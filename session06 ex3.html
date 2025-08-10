@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session6 ex3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Thanh menu */
+        header {
+            background-color: #111;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Phần giới thiệu */
+        .intro {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .intro img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .intro p {
+            font-size: 16px;
+            margin: 0;
+        }
+        /* Tiêu đề dự án */
+        h2 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        /* Các nút dự án */
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+        .projects button {
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .projects button:hover {
+            background-color: #333;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio của TSUBASA</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="https://i.pinimg.com/736x/70/02/ed/7002edce09943ae64da280ece49cc617.jpg"
+        alt="">
+        <p>Xin chào! Tôi là <b>TSUBASA</b>, một nhà phát triển web sáng tạo.</p>
+    </section>
+
+    <h2>Dự án của tôi</h2>
+    <div class="projects">
+        <button>Dự án 1</button>
+        <button>Dự án 2</button>
+        <button>Dự án 3</button>
+        <button>Dự án 4</button>
+    </div>
+
+    <footer>
+        Kết nối với tôi trên <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </footer>
+
+</body>
+</html>
